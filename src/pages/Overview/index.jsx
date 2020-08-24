@@ -3,6 +3,7 @@ import { PageContainer } from '@ant-design/pro-layout';
 import { Row, Col, Card } from 'antd';
 import { connect, useIntl } from 'umi';
 import Bmap from '../../components/Map';
+//import Dmap from '../../components/Dmap';
 import StackTheta from '../../components/Charts/StackTheta';
 import Radar from '../../components/Charts/Radar';
 import StackedColumn from '../../components/Charts/StackedColumn';

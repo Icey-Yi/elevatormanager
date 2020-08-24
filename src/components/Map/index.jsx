@@ -23,7 +23,7 @@ const Bmap = props => {
         status: item.status,
       }));
       var bmap = new BMap.Map("map");    // 创建Map实例
-      var point = new BMap.Point(points[0].lng, points[1].lat);// 创建中心点坐标 
+      var point = new BMap.Point(points[0].lng, points[0].lat);// 创建中心点坐标 
       bmap.centerAndZoom(point, 11); // 初始化地图,设置中心点坐标和地图级别
       bmap.enableScrollWheelZoom(true);
       bmap.addControl(new BMap.NavigationControl());
@@ -69,6 +69,7 @@ const Bmap = props => {
         openInfo(content, e)
       });
     }
+    
 
     function openInfo(content, e) {
       var p = e.target;
